@@ -18,20 +18,21 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="container w-full p-4 bg-white">
-      <div className="card card-compact shadow-xl m-5">
+    <div className=" w-full p-4 bg-white">
+      <div className="card card-compact shadow-xl m-5  w-full max-w-lg mx-auto">
         <figure className="flex justify-center">
           <img
             src={product.image}
             alt={product.pName}
-            className="w-1/2"
+            className="w-full md:w-1/2"
           />
         </figure>
         <div className="card-body">
           <h2 className="text-black text-2xl">{product.pName}</h2>
           <p>{product.pDescription}</p>
+          <p className='text-black'> Price : {product.price}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-outline">{product.price}</button>
+            <button className="btn btn-success">Buy</button>
           </div>
         </div>
       </div>
