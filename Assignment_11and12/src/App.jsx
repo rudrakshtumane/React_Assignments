@@ -9,9 +9,13 @@ import NotFound from "./components/NotFound"
 import ProductList from "./components/ProductList"
 import ProductDetails from "./components/ProductDetails"
 
+
+
 const App = () => {
   return (
-    <>
+    
+ <>
+ 
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,9 +27,9 @@ const App = () => {
         <Route path="/product/:productId" element={<ProductDetails />} />
         <Route path="*" element={<NotFound   />} />
       </Routes>
+      
+      </>
 
-    
-    </>
 
   )
 }
